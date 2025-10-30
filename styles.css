@@ -112,6 +112,23 @@ body {
     margin: 0;
 }
 
+.typing-text {
+    overflow: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 2.5s steps(55) 0.5s forwards, blink 1s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 94.5%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
 .icon {
     width: 24px;
     height: 24px;
@@ -148,6 +165,28 @@ body {
     padding: 0;
     display: flex;
     gap: 10px;
+}
+
+.icon-list li {
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: slideY 0.7s ease-out 0.35s forwards;
+}
+
+.icon-list li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.icon-list li:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.icon-list li:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+.icon-list li:nth-child(4) {
+    animation-delay: 0.5s;
 }
 
 .text-heading {
