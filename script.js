@@ -97,6 +97,3 @@ document.addEventListener('DOMContentLoaded', () => {
     initializeSlider('content1', sliderData.content1);
     initializeSlider('content2', sliderData.content2);
 });
-
-// Example: How to add a new item programmatically
-// addSliderItem('content1', { name: 'Rust', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rust/rust-plain.svg' });
