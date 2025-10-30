@@ -64,6 +64,22 @@ body {
     right: 3%;
 }
 
+.footer-text {
+    position: absolute;
+    bottom: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.footer-line {
+    position: absolute;
+    bottom: 5%;
+    transform: translate(51.6%);
+    width: 50%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 @media (max-width: 768px) {
     .header {
         margin-left: 10%;
