@@ -22,7 +22,7 @@ body {
 
 .header {
     background-image:
-        linear-gradient(to right, rgba(18, 18, 18, 1), rgba(25, 25, 25, 1));
+        linear-gradient(to right, rgba(18, 18, 18, 0.95), rgba(25, 25, 25, 0.95));
     padding: 0.25%;
     position: fixed;
     top: 1.5%;
@@ -37,6 +37,7 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+    z-index: 9999;
 }
 
 .emoji {
@@ -51,7 +52,7 @@ body {
     text-decoration: none;
     font-size: large;
     font-weight: 550;
-    padding: 10px 5px;
+    padding: 13px 5px;
 }
 
 .button-header:hover {
@@ -141,15 +142,102 @@ body {
     gap: 10px;
 }
 
+.text-heading {
+    margin-top: 3%;
+    font-size: 48px;
+    text-align: center;
+}
+
+.section-2 {
+    margin-top: 1%;
+    width: 40%;
+    padding-bottom: 1.5%;
+    align-items: center;
+    background-image:
+        linear-gradient(to right, rgba(25, 25, 25, 1), rgba(18, 18, 18, 1));
+}
+
+.section-3,
+.section-4 {
+    width: 20%;
+    justify-content: center;
+    text-align: center;
+    background-image:
+        linear-gradient(to bottom, rgba(18, 18, 18, 1), rgba(25, 25, 25, 1));
+}
+
+.about-list {
+    width: 40%;
+    list-style: none;
+    margin: 1rem auto;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.about-list li {
+    flex: 0 0 57%;
+    display: flex;
+}
+
+.about-list .main-section {
+    width: 100%;
+    padding: 1rem 1rem;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-subheading {
+    font-size: 32px;
+    margin: 0;
+}
+
+.text-normal {
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    line-height: 135%;
+}
+
+.section-5 {
+    margin-top: 1%;
+    width: 40%;
+    padding-bottom: 1.5%;
+    align-items: center;
+    background-image:
+        linear-gradient(to right, rgba(18, 18, 18, 1), rgba(25, 25, 25, 1));
+}
+
+.text-date {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0;
+    line-height: 135%;
+}
+
+.experience-underline {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 .footer-text {
-    position: absolute;
+    position: relative;
     bottom: 1px;
     left: 50%;
+    text-align: center;
     transform: translateX(-50%);
 }
 
 .footer-line {
-    position: absolute;
+    margin-top: 3%;
+    position:relative;
     bottom: 5%;
     transform: translate(51.6%);
     width: 50%;
@@ -229,4 +317,22 @@ body {
         padding-left: 2%;
         padding-right: 2%;
     }
+}
+
+.experience-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience-logo {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    margin-left: -40px;
+}
+
+.experience-text {
+    flex: 1;
+    text-align: left;
 }
