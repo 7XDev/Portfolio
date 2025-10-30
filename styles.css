@@ -67,7 +67,7 @@ body {
 
 .main-section {
     background-image:
-        linear-gradient(to right, rgba(18, 18, 18, 1), rgba(25, 25, 25, 1));
+        linear-gradient(to right, rgba(17, 17, 17, 1), rgba(25, 25, 25, 1));
     padding: 0.25% 3% 10% 3%;
     font-size: 24px;
     border-radius: 8px;
@@ -91,7 +91,7 @@ body {
 }
 
 .main-heading {
-    font-size: 64px;
+    font-size: 68px;
     font-weight: 700;
     margin: 0;
     margin-bottom: 0.5%;
@@ -203,6 +203,84 @@ body {
     line-height: 135%;
 }
 
+.slider-container {
+    width: 100%;
+    transition: 0.13s;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-track {
+    display: flex;
+    gap: 1rem;
+    animation: scroll-left 20s linear infinite;
+    width: fit-content;
+}
+
+.slider-track:hover {
+    animation-play-state: paused;
+}
+
+.test-li {
+    width: 20%;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.slider-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    min-width: fit-content;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.05);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.slider-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.slider-item img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.slider-item:hover img {
+    transform: scale(1.1);
+}
+
+.slider-item span {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
+    white-space: nowrap;
+}
+
+.slider-line {
+    margin-top: 0.3%;
+    margin-bottom: 0.3%;
+    position: relative;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #88888826 0%, #ffffff26 50%, #88888826 100%);
+}
+
 .section-5 {
     margin-top: 1%;
     width: 40%;
@@ -217,6 +295,24 @@ body {
     font-weight: 500;
     margin: 0;
     line-height: 135%;
+}
+
+.experience-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience-logo {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    margin-left: -40px;
+}
+
+.experience-text {
+    flex: 1;
+    text-align: left;
 }
 
 .experience-underline {
@@ -317,22 +413,4 @@ body {
         padding-left: 2%;
         padding-right: 2%;
     }
-}
-
-.experience-section {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.experience-logo {
-    width: 96px;
-    height: 96px;
-    object-fit: contain;
-    margin-left: -40px;
-}
-
-.experience-text {
-    flex: 1;
-    text-align: left;
 }
