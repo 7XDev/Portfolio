@@ -23,11 +23,11 @@ body {
 .header {
     background-image:
         linear-gradient(to right, rgba(20, 20, 20, 1), rgba(30, 30, 30, 1));
-    margin-top: 1%;
-    margin-left: 31%;
-    margin-right: 31%;
     padding: 0.25%;
-    position: relative;
+    position: fixed;
+    top: 1%;
+    left: 31%;
+    right: 31%;
     padding-left: 1%;
     font-size: 24px;
     border-radius: 8px;
@@ -82,8 +82,8 @@ body {
 
 @media (max-width: 768px) {
     .header {
-        margin-left: 10%;
-        margin-right: 10%;
+        left: 10%;
+        right: 10%;
         margin-top: 2%;
     }
 }
