@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700;800&display=swap');
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 body {
     background-color: rgba(10, 10, 10, 1);
     color: white;
@@ -121,12 +126,19 @@ body {
 }
 
 @keyframes typing {
-    from { width: 0; }
-    to { width: 94.5%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 94.5%;
+    }
 }
 
 @keyframes blink {
-    50% { border-color: transparent; }
+    50% {
+        border-color: transparent;
+    }
 }
 
 .icon {
@@ -223,6 +235,7 @@ body {
     transform: translateX(-30px);
     animation: slideX 0.4s ease-out 0.35s forwards;
 }
+
 .section-4 {
     width: 20%;
     justify-content: center;
@@ -298,6 +311,7 @@ body {
     0% {
         transform: translateX(0%);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -357,7 +371,7 @@ body {
     align-items: center;
     background-image:
         linear-gradient(to right, rgba(18, 18, 18, 1), rgba(25, 25, 25, 1));
-    
+
     opacity: 0;
     transform: translateY(-20px);
     animation: slideY 0.4s ease-out 0.35s forwards;
@@ -406,7 +420,7 @@ body {
 
 .footer-line {
     margin-top: 3%;
-    position:relative;
+    position: relative;
     bottom: 5%;
     transform: translate(51.6%);
     width: 50%;
@@ -434,13 +448,13 @@ body {
     }
 
     .main-section {
-        width: 90%;
+        width: 88%;
         padding: 4% 4% 8% 4%;
     }
 
     .section-1 {
         margin-top: 25%;
-        width: 90%;
+        width: 88%;
     }
 
     .main-heading {
@@ -474,11 +488,27 @@ body {
 
     .section-2,
     .section-5 {
-        width: 90%;
+        width: 88%;
+    }
+
+    .section-3,
+    .section-4 {
+        width: 88% !important;
+        padding: 3.92% 3.92% 7.84% 3.92% !important;
+    }
+
+    .section-3 .text-subheading,
+    .section-4 .text-subheading {
+        font-size: 23.52px;
+    }
+
+    .section-3 .text-normal,
+    .section-4 .text-normal {
+        font-size: 15.68px;
     }
 
     .about-list {
-        width: 90%;
+        width: 88%;
     }
 
     .text-subheading {
@@ -495,6 +525,7 @@ body {
 
     .slider-track {
         gap: 0.6rem;
+        animation: scroll-left 17.6s linear infinite;
     }
 
     .slider-item {
@@ -512,8 +543,11 @@ body {
     }
 
     .experience-logo {
-        width: 64px;
-        height: 64px;
+        width: 96px;
+        height: 96px;
+        object-fit: contain;
+        padding-top: 18px;
+        margin-left: -20px;
     }
 
     .footer-text {
@@ -521,7 +555,7 @@ body {
     }
 
     .footer-line {
-        width: 80%;
+        width: 50%;
     }
 }
 
