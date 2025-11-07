@@ -123,6 +123,8 @@ body {
     white-space: nowrap;
     width: 0;
     animation: typing 2.5s steps(55) 0.5s forwards, blink 1s step-end infinite;
+    max-width: fit-content;
+    display: inline-block;
 }
 
 @keyframes typing {
@@ -131,12 +133,15 @@ body {
     }
 
     to {
-        width: 94.5%;
+        width: 100%;
     }
 }
 
 @keyframes blink {
-    50% {
+    0%, 50% {
+        border-color: white;
+    }
+    51%, 100% {
         border-color: transparent;
     }
 }
@@ -463,6 +468,11 @@ body {
 
     .main-subheading {
         font-size: 18px;
+    }
+
+    .typing-text {
+        animation: typing 1.5s steps(35) 0.5s forwards, blink 1s step-end infinite;
+        border-right-width: 1.5px;
     }
 
     .icon-list {
