@@ -376,7 +376,8 @@ body {
     background: linear-gradient(to right, #88888826 0%, #ffffff26 50%, #88888826 100%);
 }
 
-.section-5 {
+.section-5,
+.section-6 {
     margin-top: 1%;
     width: 40%;
     padding-bottom: 1.5%;
@@ -429,6 +430,11 @@ body {
     height: 96px;
     object-fit: contain;
     margin-left: -40px;
+}
+
+.experience-logo-wide {
+    width: 144px;
+    height: 72px;
 }
 
 .experience-text {
@@ -526,7 +532,8 @@ body {
     }
 
     .section-2,
-    .section-5 {
+    .section-5,
+    .section-6 {
         width: 88%;
     }
 
@@ -599,6 +606,11 @@ body {
         object-fit: contain;
         padding-top: 18px;
         margin-left: -20px;
+    }
+
+    .experience-logo-wide {
+        width: 120px;
+        height: 60px;
     }
 
     .footer-text {
